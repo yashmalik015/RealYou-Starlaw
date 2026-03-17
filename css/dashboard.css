@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #0B0F1A;
+    color: white;
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    background: #111827;
+    padding: 30px;
+    border-right: 1px solid rgba(198,167,94,0.2);
+}
+
+.sidebar h2 {
+    color: #C6A75E;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.main {
+    flex: 1;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    border: 1px solid rgba(198,167,94,0.2);
+}

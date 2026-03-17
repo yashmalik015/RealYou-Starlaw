@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StarLaw | Secure Access</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Auth CSS -->
+    <link rel="stylesheet" href="css/auth.css">
+
+    <!-- Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <h1>Welcome Back</h1>
+            <p class="subtitle">Access your legal intelligence dashboard</p>
+
+            <!-- Toggle -->
+            <div class="toggle">
+                <button id="loginBtn" class="active">Login</button>
+                <button id="signupBtn">Sign Up</button>
+            </div>
+
+            <!-- Form -->
+            <form id="authForm">
+
+                <input type="text" id="nameField" placeholder="Full Name" style="display:none;" />
+
+                <input type="email" placeholder="Email Address" required />
+                <input type="password" placeholder="Password" required />
+
+                <!-- Role Selection (only for signup) -->
+                <select id="roleSelect" style="display:none;">
+                    <option value="">Select Your Role</option>
+                    <option value="entrepreneur">Entrepreneur</option>
+                    <option value="businessman">Businessman</option>
+                    <option value="lawyer">CA / Lawyer</option>
+                </select>
+
+                <button type="submit" class="gold-btn">Continue</button>
+            </form>
+
+            <div class="divider">
+                <span>or</span>
+            </div>
+
+            <!-- Google Sign In -->
+            <div class="google-btn" onclick="googleSignIn()">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
+                Sign in with Google
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0B0F1A;
+    font-family: 'Inter', sans-serif;
+    color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glass Card */
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    padding: 50px 40px;
+    border-radius: 20px;
+    width: 380px;
+    border: 1px solid rgba(198,167,94,0.2);
+    animation: fadeUp 1s ease;
+}
+
+.auth-card h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #C6A75E;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+/* Toggle */
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.toggle button {
+    flex: 1;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toggle .active {
+    color: #C6A75E;
+    border-bottom: 2px solid #C6A75E;
+}
+
+/* Inputs */
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(198,167,94,0.2);
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 1px solid #C6A75E;
+    box-shadow: 0 0 10px rgba(198,167,94,0.3);
+}
+
+/* Gold Button */
+
+.gold-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #C6A75E, #e6c97c);
+    border: none;
+    border-radius: 30px;
+    color: #0B0F1A;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.gold-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(198,167,94,0.4);
+}
+
+/* Divider */
+
+.divider {
+    text-align: center;
+    margin: 20px 0;
+    color: #777;
+}
+
+/* Google Button */
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.google-btn img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.google-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Animation */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
